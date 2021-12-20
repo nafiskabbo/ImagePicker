@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="image_picker_padding_small">4dp</dimen>
+    <dimen name="image_picker_padding_medium">8dp</dimen>
+    <dimen name="image_picker_padding_large">16dp</dimen>
+    <dimen name="image_picker_margin_large">16dp</dimen>
+    <dimen name="image_picker_grid_spacing">1dp</dimen>
+</resources>

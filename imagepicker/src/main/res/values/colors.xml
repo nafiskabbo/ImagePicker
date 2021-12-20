@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="image_picker_black">#000000</color>
+    <color name="image_picker_white">#FFFFFF</color>
+    <color name="image_picker_black_alpha_30">#4D000000</color>
+    <color name="image_picker_grey">#424242</color>
+    <color name="image_picker_dark">#323232</color>
+    <color name="image_picker_teal">#009688</color>
+    <color name="image_picker_blue">#1976D2</color>
+</resources>

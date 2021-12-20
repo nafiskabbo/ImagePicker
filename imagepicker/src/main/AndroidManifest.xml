@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kabbodev.imagepicker">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".ui.image_picker.ImagePickerActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/imagepicker_ImagePickerTheme" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_picker_file_paths" />
+        </provider>
+    </application>
+
+</manifest>

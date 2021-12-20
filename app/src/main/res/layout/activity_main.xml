@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/folder_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:text="Folder Mode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/multipleModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="Multiple Mode"
+            app:layout_constraintEnd_toEndOf="@+id/folder_mode_switch"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/folder_mode_switch"
+            app:layout_constraintTop_toBottomOf="@+id/folder_mode_switch" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/cameraOnlySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Camera Only"
+            app:layout_constraintEnd_toEndOf="@+id/multipleModeSwitch"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/multipleModeSwitch"
+            app:layout_constraintTop_toBottomOf="@+id/multipleModeSwitch" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/showCameraSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="Show Camera"
+            app:layout_constraintEnd_toEndOf="@+id/cameraOnlySwitch"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cameraOnlySwitch"
+            app:layout_constraintTop_toBottomOf="@+id/cameraOnlySwitch" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/showNumberIndicatorSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Number Indicator"
+            app:layout_constraintEnd_toEndOf="@+id/showCameraSwitch"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/showCameraSwitch"
+            app:layout_constraintTop_toBottomOf="@+id/showCameraSwitch" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/alwaysShowDoneSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:text="Always Done"
+            app:layout_constraintEnd_toEndOf="@+id/showNumberIndicatorSwitch"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/showNumberIndicatorSwitch"
+            app:layout_constraintTop_toBottomOf="@+id/showNumberIndicatorSwitch" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pick_image_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="START"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alwaysShowDoneSwitch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

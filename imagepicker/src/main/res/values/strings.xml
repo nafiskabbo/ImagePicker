@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="imagepicker_action_ok">OK</string>
+    <string name="imagepicker_action_done">DONE</string>
+    <string name="imagepicker_action_cancel">CANCEL</string>
+
+    <string name="imagepicker_title_folder">Albums</string>
+    <string name="imagepicker_title_image">Photos</string>
+
+    <string name="imagepicker_text_gif">GIF</string>
+
+    <string name="imagepicker_error_no_camera">No camera found.</string>
+    <string name="imagepicker_error_open_camera">Could not open camera.</string>
+
+    <string name="imagepicker_msg_no_images">No image available.</string>
+    <string name="imagepicker_msg_no_external_storage_permission">To continue, please allow app to access photos and media on this device.</string>
+    <string name="imagepicker_msg_limit_images">Limit selection to %d images.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
