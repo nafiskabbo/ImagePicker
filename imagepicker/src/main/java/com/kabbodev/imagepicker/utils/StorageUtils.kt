@@ -85,7 +85,7 @@ object StorageUtils {
 
     fun getImageCollectionUri(): Uri {
         return sdk29AndUp {
-            MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL_PRIMARY)
+            MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL)
         } ?: MediaStore.Images.Media.EXTERNAL_CONTENT_URI
     }
 
