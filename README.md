@@ -28,7 +28,7 @@ dependencyResolutionManagement {
 Add the following dependency in app build.gradle:
 ```
 dependencies {
-    implementation 'com.github.nafiskabbo:image-picker:1.0'
+    implementation 'com.github.nafiskabbo:ImagePicker:1.0'
 }
 ```
 
