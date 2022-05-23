@@ -88,7 +88,8 @@ class ImagePickerViewModel(application: Application) : AndroidViewModel(applicat
                     val bucketId = cursor.getLong(bucketIdColumn)
                     val bucketName = cursor.getString(bucketNameColumn)
 
-                    val uri = ContentUris.withAppendedId(imageCollectionUri, id)
+                    val uri = ContentUris.withAppendedId(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, id)
+//                    val uri = ContentUris.withAppendedId(imageCollectionUri, id)
 
                     val image = Image(uri, name, bucketId, bucketName)
                     images.add(image)
